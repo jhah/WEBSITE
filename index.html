@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>Personal Wesite</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<embed src="audio/beautifullife.mp3" hidden="true"></embed>
+</head>
+<body>
+
+<div class="social-media">
+<div class="container">	
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=100043905302764" class="fa fa-facebook"></a></li>
+<li><a href="https://www.instagram.com/nurlnjh_/" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+
+<style>
+<!--
+.styling{
+background-color:black;
+color:lime;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+
+<span id="digitalclock" class="styling"></span>
+
+<script>http://blog.dynamicdrive.com/add-custom-javascript-css-wordpress/
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+
+<!--header-->
+<header>
+<div class="container">
+<h1><a href="index.html">HELL0 :)</a></h1>
+<ul> 
+<li class="active"><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="other.html">OTHER INFORMATION</a></li>
+</ul>
+</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--banner-->
+<section class="banner">
+<div class="marquee">
+	<h2><marquee>WELCOME TO MY WEBSITE</marquee></h2>
+</div>
+</section>
+<br>
+<h3><p>Welcome to my personal website. But before that i provide a quote for you 
+to make your life motivated. I also provide this website that have a lot of <a href="https://my.oberlo.com/blog/motivational-quotes">motivational quote</a> for you.</p>
+<img src="image/quote.jpg">
+</h3>
+<h4><p>by: HENRY FORD</p></h4>
+
+<!--footer-->
+<footer>
+<div class"container">
+<small>Copyright &copy; 2020 - NURUL NAJIHAH ABU TALIB - IMD 311</small>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>Personal Wesite</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<embed src="audio/beautifullife.mp3" hidden="true"></embed>
+</head>
+<body>
+
+<!--header-->
+<div class="social-media">
+<div class="container">	
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=100043905302764" class="fa fa-facebook"></a></li>
+<li><a href="https://www.instagram.com/nurlnjh_/" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+
+<style>
+<!--
+.styling{
+background-color:black;
+color:lime;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+
+<span id="digitalclock" class="styling"></span>
+
+<script>http://blog.dynamicdrive.com/add-custom-javascript-css-wordpress/
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+
+
+<header>
+<div class="container">
+<h1><a href="index.html">HELL0 :)</a></h1>
+<ul> 
+<li class="active"><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="other.html">OTHER INFORMATION</a></li>
+</ul>
+</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--experience-->
+<section class="experience">
+<div class="marquee">
+	<h2><marquee>MY EXPERIENCE</marquee></h2>
+</div>
+</selection>
+<br>
+<h6><p>Practically I join every activity organized in the university. 
+So that I can gain more experience, there are some experience that I got</p>
+<br>
+<ol type="1">
+<li>Inter-college running competition</li>
+<br>
+<img src="image/sukol.jpg">
+<p>This competition is 2019 which is when I in semester 3. 
+UiTM Kedah has been organized an sport event among hostel which is Malinja, Mahsuri, Masria and Murni. 
+There are many sport competition which is futsal, basketball, rugby and other. 
+I have participate in running competition from Murni hostel but I did not win.</p>
+<br>
+<li>Program - Do It Right</li>
+<br>
+<img src="image/murni.jpg">
+<p>This program have been organized by Murni hostel it name is Do It Right. 
+This program is about to learn and know how to get a sponsor by other organization if our club want to make an event. 
+I was representative from Iman Club which Islamic club in UiTM Kedah.</p>
+</ol>
+</h6>
+
+</body>
+</html>

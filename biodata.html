@@ -1,0 +1,127 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>Personal Wesite</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<embed src="audio/beautifullife.mp3" hidden="true"></embed>
+</head>
+<body>
+<!--header-->
+<div class="social-media">
+<div class="container">	
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=100043905302764" class="fa fa-facebook"></a></li>
+<li><a href="https://www.instagram.com/nurlnjh_/" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+
+<style>
+<!--
+.styling{
+background-color:black;
+color:lime;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+
+<span id="digitalclock" class="styling"></span>
+
+<script>http://blog.dynamicdrive.com/add-custom-javascript-css-wordpress/
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+
+<header>
+<div class="container">
+<h1><a href="index.html">HELL0 :)</a></h1>
+<ul> 
+<li class="active"><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="other.html">OTHER INFORMATION</a></li>
+</ul>
+</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--biodata-->
+<section class="biodata">
+<div class="marquee">
+	<h2><marquee>MY BIODATA</marquee></h2>
+</div>
+</section>
+<br>
+
+<div class="image image1">
+<img src="image/me.jpg" alt="">
+</div>
+<div class="image image2">
+<img src="image/me2.jpg" alt="">
+</div>
+<h5><p>	Hi my name is NURUL NAJIHAH BINTI ABU TALIB. I'm 20 years old. I was born in Hospital Melaka on 9<sup>th</sup> August 2000.
+I have been raise in Kedah from years 5 until 11.Then, from year 12 until now I stay at Penang with my beloved family.  
+I started my study during year 5 at kindergarten. Then, from 7 years until 11 I went to Sekolah Kebangsaan Sri Limau (SKSL). 
+I moved to Sekolah Kebangsaan Mohd Shah (SKMS) when I was 12 years old. After the UPSR examination, my parents sent me to a religious school in Penang which is Madrasah Khairiah Islamiah. 
+I learned to be independent because I lived in hostel. I also appreciate the time because in the hostel we have to make a fast movement no matter while eating or bathing.</p>
+<p>	After, SPM examination I waiting for offer to university. Finally, in 2018 I got the offer from Universiti Teknologi Mara Kedah (UiTM). 
+I get a Diploma in Information Management. I’m so happy and glad that I get a golden opportunity to further my study in a high level. 
+Now I’m in final years and will graduate soon but I also disappointed because I cannot spend time with by friends because of this pandemic situation. 
+I really miss my friends, they help me a lot in doing assignment also in my study.  We just communicate thru video call and whatsapp went discussing about assignment.</p>
+</h5>
+
+<!--footer-->
+<footer>
+<div class"container">
+<small>Copyright &copy; 2020 - NURUL NAJIHAH ABU TALIB - IMD 311</small>
+</div>
+</footer>
+
+</body>
+</html>
