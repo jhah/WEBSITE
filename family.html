@@ -1,0 +1,166 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width= device-width, initial-scale=1">
+<title>Personal Wesite</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<embed src="audio/beautifullife.mp3" hidden="true"></embed>
+</head>
+<body>
+<!--header-->
+<div class="social-media">
+<div class="container">	
+<ul>
+<li><a href="https://www.facebook.com/profile.php?id=100043905302764" class="fa fa-facebook"></a></li>
+<li><a href="https://www.instagram.com/nurlnjh_/" class="fa fa-instagram"></a></li>
+</ul>
+</div>
+</div>
+
+<style>
+<!--
+.styling{
+background-color:black;
+color:lime;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+
+<span id="digitalclock" class="styling"></span>
+
+<script>http://blog.dynamicdrive.com/add-custom-javascript-css-wordpress/
+<!--
+
+/*****************************************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+*****************************************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='lime'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='black'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+
+<header>
+<div class="container">
+<h1><a href="index.html">HELL0 :)</a></h1>
+<ul> 
+<li class="active"><a href="index.html">HOME</a></li>
+<li><a href="biodata.html">BIODATA</a></li>
+<li><a href="experience.html">EXPERIENCE</a></li>
+<li><a href="family.html">FAMILY</a></li>
+<li><a href="gallery.html">GALLERY</a></li>
+<li><a href="other.html">OTHER INFORMATION</a></li>
+</ul>
+</div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!--family-->
+<section class="family">
+<div class="marquee">
+	<h2><marquee>MY FAMILY</marquee></h2>
+</div>
+</section>
+<br>
+<center><img src="image/love.jpg" class="center"></center>
+<br>
+<div class="image image4">
+<img src="image/daddy.jpg">
+</div>
+<br>
+<h7><p>This is my father. His name is ABU TALIB BIN SINNAN. He was born on 17<sup>th</sup> October 1969 in Hospital Penang 
+and now his is 51 years old. He is a soldier from 1992 until 2013. He started his work at Kem Terendak Melaka. 
+After retirement his now become one of the important person in mosque which is his responsible to make sure 
+that mosque is in a clean and tidy every single time.</p><h7>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class=" image image5">
+<img src="image/mother.jpeg">
+</div>
+<br>
+<h8><p>This is my mother. Her name is ZURAIDA BINTI MOHD RADI. She is 45 years old and was born on 29<sup>th</sup> November 1975 in Hospital Kedah. 
+She is a teacher at religious primary school or in Malay we call it “Sekolah Kafa”. She start in education field from 1997 until now. 
+My mother was so strict and fierce in school. But thing that make me wondered is she the only one teacher who get a lot of present during teacher’s day, 
+almost every years get so many present rather than other teachers.</p></h8>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class=" image image6">
+<img src="image/sis.jpg">
+</div>
+<br>
+<h9><p>This is my younger sister. She is 13 years old and was born on 30<sup>th</sup> June 2017 at Hospital Kedah. 
+Now she study at SMKA Al-Irshad Penang and stay at hostel just like when I’m 13 years old. As a younger child in my family she was so spoiled. 
+When she at hostel every free time she will call my mother and told what she do in school, what was the homework she get, 
+what activity or program that she need to involved without any excuses, what problem she have and so many thing until my mom cannot do her work.</p></h9>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--footer-->
+<footer>
+<div class"container">
+<small>Copyright &copy; 2020 - NURUL NAJIHAH ABU TALIB - IMD 311</small>
+</div>
+</footer>
+
+</body>
+</html>
